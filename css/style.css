@@ -445,5 +445,104 @@ a {
 }
 /* End Products Section */
 
+/* Portfolio Section */
+.portfolio .container {
+	padding-top: 2.7rem;
+}
+.portfolio .slider {
+	grid-column: 1/-1;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: 1fr 10fr 1fr;
+	grid-column-gap: 20px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-top: 1.35rem;
+}
+.portfolio .slider .prev,
+.portfolio .slider .next {
+	width: 4rem;
+	height: 4rem;
+	background-color: var(--dark-bg);
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 46%;
+}
+.portfolio .slider .prev {
+	background-image: url(../img/arrow-left.svg);
+}
+.portfolio .slider .next {
+	margin-left: auto;
+	background-image: url(../img/arrow-right.svg);
+}
+.portfolio .slider figure {
+	margin: 0;
+	position: relative;
+}
+.portfolio .slider figure img {
+	display: block;
+}
+.portfolio .slider figure figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(52, 50, 53, 0.9);
+	color: #F5F2ED;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 1.78rem 2rem;
+}
+.portfolio .slider figure figcaption h3 {
+	margin: 0;
+	font-size: 1.78rem;
+	line-height: 2rem;
+	font-weight: 400;
+}
+.portfolio .slider figure figcaption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	color: #F5F2ED;
+	font-size: 0.67rem;
+	line-height: 0.89rem;
+	font-weight: 700;
+	position: relative;
+	padding-right: 48px;
+}
+.portfolio .slider figure figcaption a::before,
+.portfolio .slider figure figcaption a::after {
+	content: "";
+	display: block;
+	position: absolute;
+}
+.portfolio .slider figure figcaption a::before {
+	height: 1px;
+	width: 32px;
+	background-color: #F5F2ED;
+	top: 50%;
+	right: 0;
+}
+.portfolio .slider figure figcaption a::after {
+	width: 4px;
+	height: 4px;
+	border-top: 1px solid #F5F2ED;
+	border-right: 1px solid #F5F2ED;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: calc(50% - 2px);
+	right: 0;
+}
+/* End Portfolio Section */
+
 
 
