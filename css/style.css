@@ -632,5 +632,27 @@ section.dark-bg {
 }
 /* End Mission Section */
 
+/* Team Section */
+.team .container {
+	padding-top: 2.8rem;
+	padding-bottom: 6.7rem;
+}
+.team .container  .heading-wrapper {
+	margin-bottom: 1.3rem;
+}
+.team .container > p {
+	grid-column: 2/8;
+}
+.team .container .aside {
+	grid-column: 9/-1;
+	font-size: 0.78rem;
+	line-height: 1.34rem;
+}
+.team .team-img {
+	grid-column: 1/-1;
+	margin-top: 2rem;
+}
+/* End Team Section */
+
 
 
